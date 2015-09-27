@@ -17,9 +17,9 @@
             <ColumnDefinition Width=".5*" />
             <ColumnDefinition Width=".5*" />
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="btn_GoToOrders" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="**Go to Orders View**" VerticalAlignment="Center" FontSize="42.667"/>
-        <TextBlock x:Name="txtBlck_SubHeader" HorizontalAlignment="Left" Margin="810,63,0,0" Grid.Row="1" Grid.RowSpan="2" TextWrapping="Wrap" Text="Internal Test Version" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="55" Width="295"/>
-        <TextBlock x:Name="txtBlck_Header" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Restaurant Manager" VerticalAlignment="Bottom" Width="450" FontSize="48" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="btn_SubmitOrder" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="**Submit Order**" VerticalAlignment="Center" FontSize="42.667"/>
+        <TextBlock x:Name="btn_GoToOrders" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="**Go to Orders View**" VerticalAlignment="Center" FontSize="32"/>
+        <TextBlock x:Name="txtBlck_SubHeader" HorizontalAlignment="Center" Margin="0" Grid.Row="1" TextWrapping="Wrap" Text="Internal Test Version" VerticalAlignment="Bottom" Grid.ColumnSpan="2" FontSize="26.667"/>
+        <TextBlock x:Name="txtBlck_Header" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Restaurant Manager" VerticalAlignment="Bottom" FontSize="32" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="btn_SubmitOrder" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="**Submit Order**" VerticalAlignment="Center" FontSize="32"/>
     </Grid>
 </Page>

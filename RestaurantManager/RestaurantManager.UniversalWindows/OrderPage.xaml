@@ -20,8 +20,8 @@
             <ColumnDefinition Width=".25*" />
             <ColumnDefinition Width=".25*" />
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="btn_AddToOrder" HorizontalAlignment="Center" Margin="0" Grid.Row="4" TextWrapping="Wrap" Text="**Add To Order**" VerticalAlignment="Center" FontSize="42.667"/>
-        <TextBlock x:Name="btn_Submit" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="4" TextWrapping="Wrap" Text="**Submit Order**" VerticalAlignment="Center" FontSize="42.667" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="btn_AddToOrder" HorizontalAlignment="Center" Margin="0" Grid.Row="4" TextWrapping="Wrap" Text="**Add To Order**" VerticalAlignment="Center" FontSize="32"/>
+        <TextBlock x:Name="btn_Submit" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="4" TextWrapping="Wrap" Text="**Submit Order**" VerticalAlignment="Center" FontSize="32" Grid.ColumnSpan="2"/>
         <TextBlock x:Name="txtBlck_SpecialRequest" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="Special Requests:" VerticalAlignment="Top" FontSize="32" Grid.RowSpan="2" Grid.ColumnSpan="2" Width="258"/>
         <TextBlock x:Name="txtBlck_OrderItems" Grid.Column="2" HorizontalAlignment="Left" Margin="0,0,0,-3" TextWrapping="Wrap" Text="Order Items:" VerticalAlignment="Top" Grid.Row="1" FontSize="32"/>
     </Grid>
