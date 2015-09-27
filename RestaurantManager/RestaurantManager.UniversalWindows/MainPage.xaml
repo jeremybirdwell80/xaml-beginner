@@ -8,6 +8,18 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".4*" />
+            <RowDefinition Height=".1*" />
+            <RowDefinition Height=".5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*" />
+            <ColumnDefinition Width=".5*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="btn_GoToOrders" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="**Go to Orders View**" VerticalAlignment="Center" FontSize="42.667"/>
+        <TextBlock x:Name="txtBlck_SubHeader" HorizontalAlignment="Left" Margin="810,63,0,0" Grid.Row="1" Grid.RowSpan="2" TextWrapping="Wrap" Text="Internal Test Version" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="55" Width="295"/>
+        <TextBlock x:Name="txtBlck_Header" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Restaurant Manager" VerticalAlignment="Bottom" Width="450" FontSize="48" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="btn_SubmitOrder" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="**Submit Order**" VerticalAlignment="Center" FontSize="42.667"/>
     </Grid>
 </Page>

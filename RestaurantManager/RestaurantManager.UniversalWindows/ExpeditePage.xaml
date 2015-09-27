@@ -8,6 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".9*" />
+            <RowDefinition Height=".1*" />
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txtBlck_ClearAllOrders" 
+                   HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="**Clear All Orders**" VerticalAlignment="Center" FontSize="42.667"/>
     </Grid>
 </Page>
