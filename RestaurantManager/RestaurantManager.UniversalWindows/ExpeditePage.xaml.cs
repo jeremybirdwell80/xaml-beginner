@@ -26,5 +26,20 @@ namespace RestaurantManager.UniversalWindows
         {
             this.InitializeComponent();
         }
+
+        private void btn_Home_Click(object sender, RoutedEventArgs e)
+        {
+            this.Content = new MainPage();
+        }
+
+        private void AppBar_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            appBar.IsOpen = true;
+        }
+
+        private void appBar_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            appBar.IsOpen = false;
+        }
     }
 }

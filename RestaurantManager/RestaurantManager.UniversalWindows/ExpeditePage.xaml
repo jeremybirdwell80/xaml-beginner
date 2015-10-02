@@ -12,7 +12,9 @@
             <RowDefinition Height=".9*" />
             <RowDefinition Height=".1*" />
         </Grid.RowDefinitions>
-        <TextBlock x:Name="txtBlck_ClearAllOrders" 
-                   HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="**Clear All Orders**" VerticalAlignment="Center" FontSize="32"/>
+        <AppBar x:Name="appBar"  Grid.ColumnSpan="3" PointerEntered="AppBar_PointerEntered" PointerExited="appBar_PointerExited" >
+            <AppBarButton Icon="Home" Name="btn_Home"  Width="200"  HorizontalAlignment="Left" VerticalAlignment="Top" Click="btn_Home_Click"></AppBarButton>
+        </AppBar>
+        <Button x:Name="btn_ClearAllOrders" Content="Clear All Orders" HorizontalAlignment="Center" Margin="0" Grid.Row="1" VerticalAlignment="Center"/>
     </Grid>
 </Page>

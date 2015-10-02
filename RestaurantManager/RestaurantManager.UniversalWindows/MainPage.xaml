@@ -17,9 +17,9 @@
             <ColumnDefinition Width=".5*" />
             <ColumnDefinition Width=".5*" />
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="btn_GoToOrders" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="**Go to Orders View**" VerticalAlignment="Center" FontSize="32"/>
         <TextBlock x:Name="txtBlck_SubHeader" HorizontalAlignment="Center" Margin="0" Grid.Row="1" TextWrapping="Wrap" Text="Internal Test Version" VerticalAlignment="Bottom" Grid.ColumnSpan="2" FontSize="26.667"/>
         <TextBlock x:Name="txtBlck_Header" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Restaurant Manager" VerticalAlignment="Bottom" FontSize="32" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="btn_SubmitOrder" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="**Submit Order**" VerticalAlignment="Center" FontSize="32"/>
+        <Button x:Name="btn_GoToOrders" Content="Go to Orders View" HorizontalAlignment="Center" Margin="0" Grid.Row="2" VerticalAlignment="Center" Click="btn_GoToOrders_Click"/>
+        <Button x:Name="btn_SubmitOrder" Content="Submit Order" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="2" VerticalAlignment="Center" Click="btn_SubmitOrder_Click"/>
     </Grid>
 </Page>
