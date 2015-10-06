@@ -5,10 +5,11 @@
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:DataManager="using:RestaurantManager.Models"
     mc:Ignorable="d">
-    <!--<Page.TopAppBar>-->
-
-    <!--</Page.TopAppBar>-->
+    <Page.DataContext>
+        <DataManager:DataManager/>
+    </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -30,8 +31,8 @@
         <TextBlock x:Name="txtBlck_OrderItems" Grid.Column="2" HorizontalAlignment="Left" Margin="0,0,0,-3" TextWrapping="Wrap" Text="Order Items:" VerticalAlignment="Top" Grid.Row="1" FontSize="32"/>
         <Button x:Name="btn_AddToOrder" Content="Add To Order" HorizontalAlignment="Center" Margin="0" Grid.Row="4" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
         <Button x:Name="btn_SubmitOrder" Content="Submit Order" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="4" VerticalAlignment="Center" Grid.ColumnSpan="2" Canvas.ZIndex="3"/>
-        <ListView x:Name="lsv_Orders" HorizontalAlignment="Left" Height="384" Margin="0" VerticalAlignment="Top" Width="510" Grid.Row="2" Canvas.ZIndex="1"
+        <ListView x:Name="lsv_MenuItems" ItemsSource="{Binding MenuItems}" HorizontalAlignment="Left" Height="384" Margin="0" VerticalAlignment="Top" Width="510" Grid.Row="2" Canvas.ZIndex="1"
                   />
-        <ListView x:Name="lsv_OrderItems" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="2" VerticalAlignment="Top" Width="100"/>
+        <ListView x:Name="lsv_OrderItems" ItemsSource="{Binding CurrentlySelectedMenuItems}" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="2" VerticalAlignment="Top"/>
     </Grid>
 </Page>
